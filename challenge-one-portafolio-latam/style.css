@@ -187,10 +187,6 @@ section.about{
 }
 
 
-section.hobbies{
-    
-}
-
 .hobbies{
     display: flex;
     flex-direction: column;

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Encriptador</title>
+    <link rel="shortcut icon" href="imagenes/Logo.png">
+    <meta name="viewport" content="width=device-width">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <div id="cajonTextoEntrada">
+            <img id="logo" src="imagenes/Logo.png" alt="Logo">
+            <textarea placeholder="Ingrese su texto" id="textoEntrada"></textarea>
+            <div id="btnsEncriptar">
+                <div id="alerta-mayuscula">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi-exclamation-circle-fill" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+                    </svg>
+                    <p>Solo letras minúsculas y sin acentos</p>
+                </div>
+                <button id="encriptar" onclick="encriptar()">Encriptar</button>
+                <button id="desencriptar" onclick="desencriptar()">Desencriptar</button>    
+                <button id="limpiar" onclick="limpiar()">Limpiar</button>
+            </div>
+        </div>
+        <div id="cajonTextoSalida">
+            <img id="muneco" src="imagenes/Muneco.png" alt="Imagen no encontrada">
+            <h3 id="noTexto">No se ha encontrado un texto</h3>
+            <p id="ingreseTexto">Ingrese un texto para encriptar o desencriptar</p>
+            <textarea id="textoSalida" class="ocultar"></textarea>
+            <button id="copiar" style="display: none;" onclick="copiar()">Copiar</button>
+        </div>
+</body>
+</html>
