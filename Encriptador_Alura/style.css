@@ -1,0 +1,242 @@
+body{
+    background-color: #F3F5FC;
+}
+
+#logo{
+    width: 120px;
+    height: 48px;
+    float: left;
+}
+
+#cajonTextoEntrada{
+    padding: 10px;
+    padding-left: 40px;
+    margin-left: 10px;
+    position: relative;
+    float: left;
+    width: 40%;
+    height: 530px;
+}
+
+#textoEntrada{
+    border: none;
+    background-color: #F3F5FC;
+    padding-top: 80px;
+    padding-left: 30px;
+    margin-left: 100px;
+    width: 560px;
+    height: 500px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #0A3871;
+
+}
+
+#bi-exclamation-circle-fill{
+    float: left;
+    margin-right: 10px;
+}
+
+#btnsEncriptar{
+    margin-top: 15px;
+    padding-left: 100px;
+}
+
+#encriptar {
+    background-color: #0A3871;
+    border: none;
+    padding: 8px;
+    border-radius: 15px;
+    color: white;
+    position: absolute;
+    width: 150px;
+    height: 45px;
+    box-shadow: 3px 3px 3px cyan;
+}
+
+#encriptar:hover{
+    background-color: #0c4fa0;
+}
+
+#encriptar:active{
+    background-color: #093872;
+    box-shadow: 0px 0px 3px cyan;
+}
+
+#desencriptar{
+    background-color: #D8DFE8;
+    border: none;
+    padding: 8px;
+    border-radius: 15px;
+    margin-left: 200px;
+    color: #0A3871;
+    position: absolute;
+    width: 150px;
+    height: 45px;
+    box-shadow: 3px 3px 3px cyan;
+}
+
+#desencriptar:hover{
+    color: #0A3871;
+    background-color: #e1e7ed;
+}
+
+#limpiar{
+    background-color: #b9416f;
+    border: none;
+    padding: 8px;
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-left: 400px;
+    color: #fdfdfd;
+    position: absolute;
+    width: 150px;
+    height: 35px;
+    box-shadow: 3px 3px 3px cyan;
+}
+
+#limpiar:hover{
+    color: white;
+    background-color: #e05a8e;
+}
+
+
+#cajonTextoSalida{
+    padding: 10px;
+    margin-left: 65%;
+    margin-top: 20px;
+    position: relative;
+    background-color: white;
+    border-radius: 15px;
+    width: 30%;
+    border: none;
+    height: 750px;
+    box-shadow: 5px 5px 5px cyan;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#textoSalida{
+    border: none;
+    border-radius: 15px;
+    background-color: withe;
+    margin-top: 30px;
+    margin-left: 20px;
+    padding: 15px;
+    width: 280px;
+    height: 590px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #0A3871;
+}
+
+#muneco{
+    margin-top: 130px;
+    width: 340px;
+    height: 360px;
+}
+
+#noTexto{
+    margin-top: 90px;
+    text-align: center;
+}
+
+#ingreseTexto{
+    margin-top: 25px;
+    text-align: center;
+    padding: 30px;
+}
+
+
+#copiar{
+    margin-top: 25px;
+    margin-left:  100px;
+    background-color: #0A3871;
+    border: none;
+    padding: 8px;
+    border-radius: 15px;
+    color: white;
+    width: 150px;
+    height: 45px;
+    box-shadow: 3px 3px 3px cyan;
+}
+
+#copiar:hover{
+    color: white;
+    background-color: #0c4fa0;
+}
+
+.ocultar{
+    display: none;
+}
+
+.mostrar{
+    display: block;
+}
+
+@media screen and (max-width:1080px){
+    #cajonTextoEntrada{
+        float: none;
+        margin-left: 0px;
+        width: 100%;
+    }
+
+    #textoEntrada{
+        width: 70%;
+        height: 80%;
+        padding: 30px;
+        margin-left: 0px;
+    }
+
+    #btnsEncriptar{
+        padding-left: 0px;
+    }
+
+    #cajonTextoSalida{
+        width: 100%;
+        height: auto;
+        margin-top: 150px;
+        margin-left: 5%;
+        position: static;
+    }
+
+    #muneco{
+        display: none;
+    }
+
+    #noTexto{
+        margin-top: 0px;
+    }
+    
+    #ingreseTexto{
+        margin-top: 0px;
+        padding: 10px;
+    }
+
+    #textoSalida{
+        margin-top: 0px;
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width:481px){
+
+    #encriptar{
+        margin-left: 0px;
+    }
+
+    #desencriptar{
+        margin-left: 160px;
+        position: static;
+    }
+
+    #limpiar{
+        margin-left: 0px;
+        position: static;
+    }
+}
