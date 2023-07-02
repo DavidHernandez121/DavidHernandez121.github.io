@@ -1,7 +1,4 @@
-/*CSS Reset / Normalize*/
-/* Hemos disponibilizado el básico de reset de estilos. Si quieren, añadan más informaciones 
-en las secciones señaladas */
-/*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
+
 coloque nas sessões indicadas*/
 
 :root{
@@ -27,17 +24,6 @@ a{
     color: var(--cor-de-link);
 }
 
-/*En este desafío nosostros gustaríamos que ustedes intentaran utilizar la metodología BEM. 
-
-Lo que es el BEM?
-
-BEM (Bloque, Elemento, Modificador) es un enfoque basado en componentes para el 
-desarrollo web. La idea detrás de esto es dividir la interfaz de usuario en bloques
-independientes. Esto hace que el desarrollo de la interfaz sea fácil y rápido, incluso
-con una interfaz de usuario compleja, y permite la reutilización del código existente sin copiar y pegar.
-
-Enlace de la documentación oficial!
-https://en.bem.info/methodology/quick-start/*/
 
 /*Sección Menu*/
 
@@ -451,6 +437,7 @@ Utiliza las referencias de los breakpoints @media abajo */
 
     .menu{
         padding: 0 1rem;
+        flex-direction: column;
     }
 
     .menu_logo{
@@ -461,6 +448,10 @@ Utiliza las referencias de los breakpoints @media abajo */
     .menu__list__item{
         display: none;
     } 
+
+    .menu__list__item--contato{
+        margin: 0;
+    }
     
     /*Sección Title*/
     
@@ -639,6 +630,14 @@ Utiliza las referencias de los breakpoints @media abajo */
     
     .formcontato__title{
         font-size: 1.5rem;
+    }
+
+    .formcontato__input{
+        width: 90%;
+    }
+
+    .formcontato__textarea{
+        width: 90%;
     }
 
     .formcontato__botao{
